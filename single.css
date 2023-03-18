@@ -1,0 +1,171 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: lightgrey;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: flex;
+    font-size: 50px;
+    gap: 10px;
+}
+
+.btn{
+    width: 50px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+.help{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+
+
+.open .block{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+}
+
+.open .boxes{
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    margin: 10px;
+    margin-left: 100px;
+    width: 300px;
+    height: 150px;
+}
+
+.box-red{
+    position: absolute;
+    color: lightgray;
+}
+
+.open .box-red{
+    position: relative;
+    width: 150px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 7px;
+    margin-left: 80px;
+}
+
+.open .z{
+    margin-left: 5px;
+    display: flex;
+    color: green;
+}
+
+.close{
+    border:none;
+    background-color: lightgray;;
+    width: 30px;
+    height: 30px;
+}
+
+.fa-x{
+    color: lightgray;
+}
+.open .fa-x{
+    color: black;
+    font-size: 30px;
+}
+
+
+.close:hover{
+    transform: scale(1.08);
+}
+
+ .answer{
+    color:lightgray;
+}
+
+.wrapper{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choice{
+    background-color: navy;
+    color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.correct .choice{
+    background-color: green;
+}
+
+.wrong .choice{
+    background-color: red;
+}
+
+.correct .answer,
+.correct .num-1,
+.correct .num-2,
+.correct .sign{
+    color:green;
+}
+
+.wrong .answer,
+.wrong .num-1,
+.wrong .num-2,
+.wrong .sign{
+    color:red;
+}
+
