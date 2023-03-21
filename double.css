@@ -4,7 +4,8 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: lightgrey;
+    background-color: #222;
+    color: lightgrey;
 }
 
 .container{
@@ -15,12 +16,45 @@ body{
 .wrapper{
     display: flex;
     font-size: 50px;
-    gap: 10px;
+}
+
+.num-one{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #222;
+    color:#222;
+    border:none;
+    margin-bottom: -30px;
+    color: green;
+}
+
+
+.row-num{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+
+.num-2{
+    border-bottom:2px solid white;
+}
+
+.answer{
+    display: flex;
+    padding: 0 2px;
+}
+
+.answer-1,.answer-2,.answer-3{
+    color: white;
+
 }
 
 .btn{
-    width: 50px;
-    height: 25px;
+    padding: 5px 10px;
     background-color: yellow;
     border-radius: 15px;
 }
@@ -32,6 +66,9 @@ body{
 }
 
 
+.block{
+    display: none
+}
 
 .open .block{
     display: flex;
@@ -48,63 +85,50 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: lightgrey;
+    background-color:#222;
+    font-size: 50px;
 }
 
-.open .boxes{
-    margin-left: 100px;
+.nu-2{
+    border-bottom: lightgray solid;
+}
+
+.mini{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: end;
-    margin: 10px;
-    margin-left: 100px;
-    width: 300px;
-    height: 150px;
+    padding: 10px;
 }
 
-.box-red{
-    position: absolute;
-    color: lightgray;
+.answer1{
+    color: #222;
 }
 
-.open .box-red{
-    position: relative;
-    width: 150px;
-    height:30px;
+.open .row-num{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    color: black;
-    font-size: 40px;
-    padding: 3px 25px;
-    margin-left: 55px;
 }
 
-.open .x{
-    margin-left: -20px;
+.open .nu-1{
+    margin-right: -25px;
 }
 
-.open .z{
-    position: relative;;
-    margin-left: 5px;
+.ch{
+    margin-top: 80px;
     display: flex;
-    color: green;
-   
 }
 
 .close{
     border:none;
-    background-color: lightgray;;
+    background-color: #222;
     width: 30px;
     height: 30px;
 }
 
 .fa-x{
-    color: lightgray;
+    color: #222;
 }
 .open .fa-x{
-    color: black;
+    color: lightgrey;
     font-size: 30px;
 }
 
@@ -114,7 +138,7 @@ body{
 }
 
  .answer{
-    color:lightgray;
+    color:#222;
 }
 
 .wrapper{
@@ -153,6 +177,10 @@ body{
     margin: 15px;
 }
 
+.answer-black{
+    color: #222;
+}
+
 .correct .choice{
     background-color: green;
 }
@@ -161,6 +189,11 @@ body{
     background-color: red;
 }
 
+.correct .number1,
+.correct .number2,
+.correct .nu-2,
+.correct .nu-1,
+.correct .answer1,
 .correct .answer,
 .correct .num-1,
 .correct .num-2,
@@ -168,6 +201,11 @@ body{
     color:green;
 }
 
+.wrong .number1,
+.wrong .number2,
+.wrong .nu-2,
+.wrong .nu-1,
+.wrong .answer1,
 .wrong .answer,
 .wrong .num-1,
 .wrong .num-2,
